@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Roboto-Normal"; 
+  src: 
+       url("./fonts/Roboto-Italic-VariableFont.ttf") format("truetype");
+  font-weight: normal; 
+  font-style: normal; 
+}
+body{
+    background-color:  hex(#DEE6FA);
+}
+.crd{
+    background-color: white;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    border-radius: 25px;
+}
+#t1{
+    color: black;
+    font-family: Roboto-Normal, sans-serif;
+    text-align: center;
+}
