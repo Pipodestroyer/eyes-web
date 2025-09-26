@@ -1,23 +1,93 @@
 @font-face {
   font-family: "Roboto-Normal"; 
   src: 
-       url("./fonts/Roboto-Italic-VariableFont.ttf") format("truetype");
+       url("/src/fonts/Roboto-Default.ttf") format("truetype");
   font-weight: normal; 
   font-style: normal; 
 }
-body{
-    background-color:  hex(#DEE6FA);
+
+@font-face {
+  font-family: "Roboto-Light"; 
+  src: 
+       url("/src/fonts/Roboto-Default.ttf") format("truetype");
+  font-weight: lighter; 
+  font-style: normal; 
 }
-.crd{
-    background-color: white;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
+
+@font-face {
+  font-family: "Roboto-Italic-Light"; 
+  src: 
+       url("/src/fonts/Roboto-Default.ttf") format("truetype");
+  font-weight: lighter; 
+  font-style: italic; 
+}
+
+@font-face {
+  font-family: "Title-Normal"; 
+  src: 
+       url("/src/fonts/DMSerifText-Regular.ttf") format("truetype");
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+body{
+    background: #e8e8e8;
+    background: radial-gradient(circle,rgba(232, 232, 232, 1) 0%, rgba(178, 220, 235, 1) 50%, rgba(152, 184, 245, 1) 100%);
+    backdrop-filter: blur(50px);
+    font-family: Roboto-Normal, sans-serif;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin: 0;
+}
+
+.container{
+    position: relative;
+}
+.title{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+
+.form{
+    background-color: #141417C9;
+    backdrop-filter: blur(50px);
+    border-color: #4c4c55c9;
+    border-style: solid;
+    border-width: 2px;
+    position: absolute;
+    height: 40%;
+    width: 100vw;
+    margin: auto;
+    border-radius: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.buttons{
     border-radius: 25px;
 }
-#t1{
-    color: black;
-    font-family: Roboto-Normal, sans-serif;
-    text-align: center;
+
+#default-input{
+   border-radius: 25px; 
+   height: 30px;
 }
+
+#t1{
+    font-size: 50px;
+    color: white;
+    font-family: Title-Normal, sans-serif;
+}
+
+#s1{
+    color: white;
+}
+
+
+
+
+
+
