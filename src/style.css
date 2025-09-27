@@ -15,6 +15,14 @@
 }
 
 @font-face {
+  font-family: "Roboto-Heavy"; 
+  src: 
+       url("/src/fonts/Roboto-Default.ttf") format("truetype");
+  font-weight: bold; 
+  font-style: normal; 
+}
+
+@font-face {
   font-family: "Roboto-Italic-Light"; 
   src: 
        url("/src/fonts/Roboto-Default.ttf") format("truetype");
@@ -57,27 +65,40 @@ body{
     border-color: #4c4c55c9;
     border-style: solid;
     border-width: 2px;
-    position: absolute;
-    height: 40%;
-    width: 100vw;
+    position: flex;
+    -ms-flex-align: center;
+    height: auto;
+    width: auto;
     margin: auto;
     border-radius: 25px;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 
 .buttons{
-    border-radius: 25px;
+  border-radius: 10px; 
+  font-family: Roboto-Heavy, sans-serif;
+  text-align: left;
+  height: 50px;
+  padding-left: 15px;
+  font-size: 20px;
+  width: 20vw;
 }
 
 #default-input{
-   border-radius: 25px; 
-   height: 30px;
+   border-radius: 10px; 
+   font-family: Roboto-Heavy, sans-serif;
+   height: 50px;
+   padding-left: 15px;
+   font-size: 20px;
+   width: 20vw;
 }
 
 #t1{
-    font-size: 50px;
+    font-size: 70px;
     color: white;
     font-family: Title-Normal, sans-serif;
 }
