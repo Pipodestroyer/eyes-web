@@ -79,11 +79,13 @@ body{
     display: flex;
     flex-direction: column;
     height: auto;
-    width: auto;
+    width: 20vw;
     margin: auto;
     border-radius: 25px;
     padding-top: 30px;
     padding-bottom: 30px;
+    justify-content: center;
+    place-self: center;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -95,6 +97,7 @@ body{
   text-align: left;
   height: 50px;
   padding-left: 15px;
+  margin-top: 10px;
   font-size: 20px;
   width: auto;
 }
@@ -115,7 +118,7 @@ body{
 }
 
 #s1{
-    color: white;
+  color: white;
 }
 
 
