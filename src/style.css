@@ -53,7 +53,7 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    width: 30vw;
     place-self: center;
     justify-content: center;
 }
@@ -76,6 +76,8 @@ body{
     border-style: solid;
     border-width: 2px;
     -ms-flex-align: center;
+    display: flex;
+    flex-direction: column;
     height: auto;
     width: auto;
     margin: auto;
@@ -94,7 +96,7 @@ body{
   height: 50px;
   padding-left: 15px;
   font-size: 20px;
-  width: 20vw;
+  width: auto;
 }
 
 #default-input{
@@ -103,7 +105,7 @@ body{
    height: 50px;
    padding-left: 15px;
    font-size: 20px;
-   width: 20vw;
+   width: auto;
 }
 
 #t1{
