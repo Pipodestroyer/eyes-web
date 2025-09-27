@@ -52,11 +52,21 @@ body{
 
 .container{
     position: relative;
+    width: 40vw;
+    place-self: center;
 }
 .title{
     position: absolute;
+    text-align: center;
+    height: auto;
+    width: auto;
+    margin: auto;
+    border-radius: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     top: 0;
-    width: 100vw;
 }
 
 .form{
