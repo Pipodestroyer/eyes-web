@@ -76,6 +76,10 @@ body{
     top: 0;
 }
 
+a{
+  width: auto;
+}
+
 .form{
     background-color: #141417C9;
     backdrop-filter: blur(50px);
@@ -98,6 +102,10 @@ body{
     place-self: center;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.button-link{
+  width: 100px;
 }
 
 
