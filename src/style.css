@@ -48,6 +48,7 @@ body{
   backdrop-filter: blur(3px);
   background-size: cover;
   font-family: Roboto-Normal, sans-serif;
+  overflow: hidden;
 }
 
 .container{
@@ -126,6 +127,10 @@ body{
 
 .continue:hover{
   transform: scale(1.02);
+}
+
+.continue:active{
+  transform: scale(0.98);
 }
 
 .continue .icon{
