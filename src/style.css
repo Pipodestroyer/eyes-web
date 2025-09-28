@@ -135,9 +135,9 @@ a{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: filter 0.9s, transform 0.2s;
   border-radius: 10px; 
   text-align: left;
+  transition: transform 0.2s, opacity 0.5s ease-in-out;
   font-family: Roboto-Heavy, sans-serif;
   font-size: 20px;
   color: white;
@@ -146,14 +146,25 @@ a{
   background: linear-gradient(270deg,rgba(1, 117, 204, 1) 0%, rgba(27, 161, 246, 1) 50%, rgba(13, 163, 248, 1) 100%);
   width: auto;
   margin-top: 8px;
+  padding-right: 10px;
   border: 0px;
   cursor: pointer;
-  padding-right: 10px;
+}
+
+.error{
+  position: relative;
+  animation: shake .1s linear;
+  animation-iteration-count: 3;
+}
+
+@keyframes shake {
+  0% { left: -5px; }
+  100% { right: -5px; }
 }
 
 .buttoncontinue:disabled {
   cursor: not-allowed;
-  filter: grayscale(100%);
+  opacity: 50%;
 }
 
 
@@ -170,7 +181,7 @@ a{
 }
 
 
-.buttoncontinue .icon{
+.continue .icon{
   align-self: right;
 }
 
@@ -179,15 +190,16 @@ a{
    font-family: Roboto-Heavy, sans-serif;
    color: white;
    background-color: #14141738;
-   border: 0px;
    height: 50px;
    padding-left: 15px;
+   border: 0px;
    font-size: 20px;
    width: auto;
 }
 
 #default-input:focus {
   outline: 2px solid rgba(1, 117, 204, 1);
+  border: 0px;
 }
 
 #t1{
