@@ -52,7 +52,7 @@ body{
 }
 
 .container{
-    height: 110vh;
+    height: 105vh;
     align-items: center;
     display: flex;
     text-align: center;
@@ -110,6 +110,9 @@ body{
 }
 
 .continue{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   transition: transform 0.2s;
   border-radius: 10px; 
   text-align: left;
@@ -123,6 +126,7 @@ body{
   margin-top: 8px;
   border: 0px;
   cursor: pointer;
+  padding-right: 10px;
 }
 
 .continue:hover{
@@ -130,8 +134,13 @@ body{
 }
 
 .continue:active{
-  transform: scale(0.98);
+  transform: scale(0.98); 
 }
+
+.continue:focus {
+  outline: 0px;
+}
+
 
 .continue .icon{
   align-self: right;
