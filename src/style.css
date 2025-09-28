@@ -39,7 +39,7 @@
 }
 
 body{
-  background-image: url(/src/img/sky.jpg);
+  background-image: url(/src/img/sky1.jpg);
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -101,7 +101,7 @@ a{
     display: flex;
     flex-direction: column;
     height: auto;
-    width:20%-70%;
+    width: 80%;
     margin-top: 20%;
     margin-bottom: 30%;
     margin-left: 0;
