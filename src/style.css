@@ -49,6 +49,17 @@ body{
   background-size: cover;
   font-family: Roboto-Normal, sans-serif;
   overflow: hidden;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
+body.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .container{
@@ -124,7 +135,7 @@ a{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: transform 0.2s;
+  transition: filter 0.9s, transform 0.2s;
   border-radius: 10px; 
   text-align: left;
   font-family: Roboto-Heavy, sans-serif;
@@ -140,11 +151,17 @@ a{
   padding-right: 10px;
 }
 
-.continue:hover{
+.continue:disabled {
+  cursor: not-allowed;
+  filter: grayscale(100%);
+}
+
+
+.continue:enabled:hover{
   transform: scale(1.02);
 }
 
-.continue:active{
+.continue:enabled:active{
   transform: scale(0.98); 
 }
 
