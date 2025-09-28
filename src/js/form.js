@@ -1,8 +1,9 @@
-const botones = document.getElementById('send');
-const definput = document.getElementById('default-input');
+const botones = document.getElementById('start');
+const height = document.getElementById('height-input');
+const image = document.getElementById('image-input');
 
 function manage(){
-    if(definput.value.trim()===''){
+    if(height.value.trim()==='' || image.value.trim()===''){
         botones.disabled = true;
     } else {
         botones.disabled = false;
@@ -17,8 +18,6 @@ botones.addEventListener('click', function() {
         }, 1000);
     
 });
-
-definput.addEventListener('input', manage);
 
 document.addEventListener('DOMContentLoaded', (event) => {
   document.body.classList.add('fade-in');

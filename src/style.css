@@ -192,6 +192,41 @@ a{
    width: auto;
 }
 
+#height-input{
+   border-radius: 10px; 
+   font-family: Roboto-Heavy, sans-serif;
+   color: white;
+   background-color: #14141738;
+   height: 50px;
+   padding-left: 15px;
+   margin-bottom: 8px;
+   border: 0px;
+   font-size: 20px;
+   width: auto;
+}
+
+#image-input{
+   border-radius: 10px; 
+   font-family: Roboto-Heavy, sans-serif;
+   color: white;
+   background-color: #14141738;
+   height: 50px;
+   padding-left: 15px;
+   border: 0px;
+   font-size: 20px;
+   width: auto;
+}
+
+#height-input:focus {
+  outline: 2px solid rgba(1, 117, 204, 1);
+  border: 0px;
+}
+
+#image-input:focus {
+  outline: 2px solid rgba(1, 117, 204, 1);
+  border: 0px;
+}
+
 #default-input:focus {
   outline: 2px solid rgba(1, 117, 204, 1);
   border: 0px;
