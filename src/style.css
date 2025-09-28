@@ -131,7 +131,7 @@ a{
   width: auto;
 }
 
-.continue{
+.buttoncontinue{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -151,26 +151,26 @@ a{
   padding-right: 10px;
 }
 
-.continue:disabled {
+.buttoncontinue:disabled {
   cursor: not-allowed;
   filter: grayscale(100%);
 }
 
 
-.continue:enabled:hover{
+.buttoncontinue:enabled:hover{
   transform: scale(1.02);
 }
 
-.continue:enabled:active{
+.buttoncontinue:enabled:active{
   transform: scale(0.98); 
 }
 
-.continue:focus {
+.buttoncontinue:focus {
   outline: 0px;
 }
 
 
-.continue .icon{
+.buttoncontinue .icon{
   align-self: right;
 }
 
