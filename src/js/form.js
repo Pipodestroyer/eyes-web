@@ -30,7 +30,7 @@ botones.addEventListener('click', function() {
         document.body.classList.add('fade-out');
             document.body.classList.remove('fade-in');
             setTimeout(() =>{
-                window.location.href = "results'.html";
+                window.location.href = "results.html";
         }, 1000);
     
 });
