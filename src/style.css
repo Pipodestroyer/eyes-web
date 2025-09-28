@@ -135,12 +135,17 @@ body{
 #default-input{
    border-radius: 10px; 
    font-family: Roboto-Heavy, sans-serif;
+   color: white;
    background-color: #14141738;
    border: 0px;
    height: 50px;
    padding-left: 15px;
    font-size: 20px;
    width: auto;
+}
+
+#default-input:focus {
+  outline: 2px solid rgba(1, 117, 204, 1);
 }
 
 #t1{
