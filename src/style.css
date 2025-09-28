@@ -47,6 +47,7 @@ body{
     display: flex;
     text-align: center;
     margin: 0;
+    overflow: hidden;
 }
 
 .container{
@@ -61,7 +62,7 @@ body{
     text-align: center;
     height: auto;
     width: auto;
-    margin: auto;
+    margin: 0;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
@@ -108,6 +109,7 @@ body{
   height: 55px;
   padding-left: 15px;
   width: auto;
+  margin-top: 5px;
 }
 
 #default-input{
@@ -128,9 +130,3 @@ body{
 #s1{
   color: white;
 }
-
-
-
-
-
-
