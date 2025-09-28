@@ -86,8 +86,11 @@ body{
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 20vw;
-    margin: auto;
+    width:70%;
+    margin-top: 30%;
+    margin-bottom: 20%;
+    margin-left: 0;
+    margin-right: 0;
     border-radius: 25px;
     padding-top: 30px;
     padding-bottom: 30px;
