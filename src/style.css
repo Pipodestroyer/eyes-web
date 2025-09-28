@@ -39,7 +39,7 @@
 }
 
 body{
-  background-image: url(/src/img/background.jpg);
+  background-image: url(/src/img/sky.jpg);
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -69,7 +69,6 @@ body.fade-out {
     text-align: center;
     margin: 0;
     position: relative;
-    display: flex;
     flex-direction: column;
     width: 30vw;
     place-self: center;
@@ -85,6 +84,7 @@ body.fade-out {
     padding-left: 30px;
     padding-right: 30px;
     top: 0;
+    margin-top: 30%;
 }
 
 a{
@@ -101,9 +101,9 @@ a{
     display: flex;
     flex-direction: column;
     height: auto;
-    width:70%;
-    margin-top: 30%;
-    margin-bottom: 20%;
+    width:20%-70%;
+    margin-top: 20%;
+    margin-bottom: 30%;
     margin-left: 0;
     margin-right: 0;
     border-radius: 25px;
@@ -178,11 +178,6 @@ a{
 
 .buttoncontinue:focus {
   outline: 0px;
-}
-
-
-.continue .icon{
-  align-self: right;
 }
 
 #default-input{
