@@ -1,6 +1,8 @@
 const botones = document.getElementById('send');
 const height = document.getElementById('height-input');
 const image = document.getElementById('image-input');
+const usuario = localStorage.getItem("username");
+const referencia = document.querySelector('h2');
 
 function manage(){
     if(height.value.trim()==='' || image.value.trim()===''){
@@ -30,6 +32,8 @@ botones.addEventListener('click', function() {
         document.body.classList.add('fade-out');
             document.body.classList.remove('fade-in');
             setTimeout(() =>{
+                const miopia = parseFloat(`${image.value}`)/parseFloat(`${height.value}`)
+                localStorage.setItem("miopia", `${miopia.toFixed(2)}`)
                 window.location.href = "results.html";
         }, 1000);
     
@@ -41,5 +45,6 @@ image.addEventListener('input', manage);
 document.addEventListener('DOMContentLoaded', (event) => {
   document.body.classList.add('fade-in');
     botones.disabled = true;
+    referencia.innerHTML = `Estimado ${usuario}, porfavor siga las instrucciones del monitor asignado e ingrese sus resultados.`;
     console.log("loaded");
 });

@@ -13,6 +13,7 @@ botones.addEventListener('click', function() {
         document.body.classList.add('fade-out');
             document.body.classList.remove('fade-in');
             setTimeout(() =>{
+                localStorage.setItem("username", `${definput.value}`)
                 window.location.href = "test.html";
         }, 1000);
     

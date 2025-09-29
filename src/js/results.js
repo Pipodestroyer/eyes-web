@@ -1,4 +1,6 @@
 const botones = document.getElementById('send');
+const resultado = document.getElementsByClassName('resultado')[0];
+const miopia = localStorage.getItem('miopia');
 
 botones.addEventListener('click', function() { 
         document.body.classList.add('fade-out');
@@ -9,7 +11,10 @@ botones.addEventListener('click', function() {
     
 });
 
+
+
 document.addEventListener('DOMContentLoaded', (event) => {
-  document.body.classList.add('fade-in');
+    document.body.classList.add('fade-in');
+    resultado.innerHTML = `${miopia}`;
     console.log("loaded");
 });
