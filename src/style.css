@@ -48,7 +48,6 @@ body{
   backdrop-filter: blur(3px);
   background-size: cover;
   font-family: Roboto-Normal, sans-serif;
-  overflow: hidden;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
@@ -63,7 +62,7 @@ body.fade-out {
 }
 
 .container{
-    height: 105vh;
+    height: 100dvh;
     align-items: center;
     display: flex;
     text-align: center;
