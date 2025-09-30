@@ -40,6 +40,7 @@
 
 body{
   background-image: url(/src/img/background.jpg);
+  height: 100dvh;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -99,7 +100,7 @@ a{
     -ms-flex-align: center;
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 50dvh;
     width: 80%;
     margin-top: 20%;
     margin-bottom: 30%;
@@ -232,11 +233,12 @@ a{
 }
 
 #t1{
-    font-size: 70px;
+    font-size: 7dvh;
     color: white;
     font-family: Title-Normal, sans-serif;
 }
 
 #s1{
+  font-size: 2.5dvh;
   color: white;
 }
