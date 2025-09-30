@@ -242,3 +242,8 @@ a{
   font-size: 2.5dvh;
   color: white;
 }
+
+#header{
+ width: 7.5dvh;
+ height: 7.5dvh;
+}

@@ -13,20 +13,31 @@ function manage(){
     }
 }
 
-function isNumber(evt, id){
-    var errorshake = document.getElementById(`${id}`);
-    evt = (evt) ? evt : window.Event;
-    var charCode = (evt.wich) ? evt.wich : evt.keyCode;
-    if(charCode > 31 && (charCode <48 || charCode > 57)){
-        errorshake.classList.add('error');
-         setTimeout(function() {
-                errorshake.classList.remove('error');
-        }, 300);
-        return false;
-    }
-    return true;
-
+function isNumber(evt,id)
+{
+    const errorshake=document.getElementById(id);
+	try{
+        var charCode = (evt.which) ? evt.which : event.keyCode;
+        if(charCode==46){
+            var txt=document.getElementById(id).value;
+            if(!(txt.indexOf(".") > -1)){
+	            return true;
+            }
+        }
+        if (charCode > 31 && (charCode < 48 || charCode > 57) ){
+            errorshake.classList.add('error');
+                setTimeout(function() {
+                    errorshake.classList.remove('error');
+                }, 300);
+            return false;
+        }
+        return true;
+	}catch(w){
+		alert(w);
+	}
 }
+
+
 
 botones.addEventListener('click', function() { 
         document.body.classList.add('fade-out');
